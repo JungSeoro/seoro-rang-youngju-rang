@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "서로랑 영주랑",
+  "name": "서로랑 영주의 모바일 청첩장",
   "icons": [
     {
       "src": "favicon.ico",
