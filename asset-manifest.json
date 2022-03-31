@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/seoro-rang-youngju-rang/static/css/main.073c9b0a.css",
-    "main.js": "/seoro-rang-youngju-rang/static/js/main.5211edd4.js",
-    "static/js/787.aab46770.chunk.js": "/seoro-rang-youngju-rang/static/js/787.aab46770.chunk.js",
-    "static/media/logo.svg": "/seoro-rang-youngju-rang/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/seoro-rang-youngju-rang/index.html",
-    "main.073c9b0a.css.map": "/seoro-rang-youngju-rang/static/css/main.073c9b0a.css.map",
-    "main.5211edd4.js.map": "/seoro-rang-youngju-rang/static/js/main.5211edd4.js.map",
-    "787.aab46770.chunk.js.map": "/seoro-rang-youngju-rang/static/js/787.aab46770.chunk.js.map"
+    "main.css": "./static/css/main.073c9b0a.css",
+    "main.js": "./static/js/main.b7f0537f.js",
+    "static/js/787.aab46770.chunk.js": "./static/js/787.aab46770.chunk.js",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "./index.html",
+    "main.073c9b0a.css.map": "./static/css/main.073c9b0a.css.map",
+    "main.b7f0537f.js.map": "./static/js/main.b7f0537f.js.map",
+    "787.aab46770.chunk.js.map": "./static/js/787.aab46770.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.5211edd4.js"
+    "static/js/main.b7f0537f.js"
   ]
 }
