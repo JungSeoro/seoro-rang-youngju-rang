@@ -1,7 +1,13 @@
+import React, {useState,useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+useEffect(()=>{
+  document.title = "서로랑 영주랑"
+});
+
+
   return (
     <div className="App">
       <header className="App-header">
