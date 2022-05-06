@@ -4,6 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+window.addEventListener("DOMContentLoaded", function(){
+  var Agent = navigator.userAgent.toLowerCase();
+  if(Agent.includes("kakao")){
+      window.location.href = 'kakaotalk://inappbrowser/close';
+      if(navigator.userAgent.match(/iPhone|iPad/i)){
+          window.location.href='ftp://'+window.location.href.replace(/https?:\/\//i,'');
+      }
+      else {
+          window.location.href='intent://'+window.location.href.replace(/https?:\/\//i,'')+'#Intent;scheme=http;package=com.android.chrome;end';
+      }
+  }
+});
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
