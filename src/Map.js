@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'; 
 const { kakao } = window; 
 const Map = () => { 
-    const [map,setMap] = useState(null); //처음 지도 그리기 
+    const [map,setMap] = useState(null);
     useEffect(()=>{ 
         const container = document.getElementById('map');
         const options = { 
