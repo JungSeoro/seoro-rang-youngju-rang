@@ -5,16 +5,26 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 window.addEventListener("DOMContentLoaded", function(){
-  var Agent = navigator.userAgent.toLowerCase();
+  const Agent = navigator.userAgent.toLowerCase();
   if(Agent.includes("kakao")){
-      window.location.href = 'kakaotalk://inappbrowser/close';
+      // window.location.href = 'kakaotalk://inappbrowser/close';
       if(navigator.userAgent.match(/iPhone|iPad/i)){
-          window.location.href='ftp://'+window.location.href.replace(/https?:\/\//i,'');
+          // window.location.href='ftp://'+window.location.href.replace(/https?:\/\//i,'');
       }
       else {
-          window.location.href='intent://'+window.location.href.replace(/https?:\/\//i,'')+'#Intent;scheme=http;package=com.android.chrome;end';
+          // window.location.href = 'kakaotalk://inappbrowser/close';
+          // window.location.href='intent://'+window.location.href.replace(/https?:\/\//i,'')+'#Intent;scheme=http;package=com.android.chrome;end';
       }
   }
+  if ( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)){
+    console.log("mobile");
+  }
+  else{
+    console.log("desktop");
+    const desktopEmoji= String.fromCodePoint(0x1F609);
+    alert("스마트폰으로 서로랑영주랑.cards에 접속해주세요"+ desktopEmoji);
+    window.open('about:blank','_self').close(); 	    
+  } 
 });
 
 ReactDOM.render(
@@ -24,7 +34,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

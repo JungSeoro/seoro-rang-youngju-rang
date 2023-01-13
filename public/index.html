@@ -18,17 +18,39 @@
     <link rel="manifest" href="%PUBLIC_URL%/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="%PUBLIC_URL%/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="black" >
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- thumbnail -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://서로랑영주랑.cards">
+    <meta property="og:title" content="서로랑 영주랑">
+    <meta property="og:image" content="%PUBLIC_URL%/img/link_tumbnail.jpg">
+    <meta property="og:description" content="서울웨딩타워 6/19(일) 1시 20분">
+    <meta property="og:site_name" content="서로랑 영주랑">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta
       name="description"
       content="Wedding Invitation from Seoro & Youngju"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-229745602-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-229745602-1');
+    </script>
+    <script>history.scrollRestoration = "manual"</script>
     <title>서로랑 영주랑</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8e8132a4a0aa081d487b79f9af54aba3"></script>
   </body>
 </html>
