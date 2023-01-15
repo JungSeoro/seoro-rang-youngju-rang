@@ -4,7 +4,6 @@ import './App.css';
 import './font.css'
 import { ReactComponent as IconPlaceWhite } from "./resource/icon_place_white.svg";
 import { ReactComponent as IconDateWhite } from "./resource/icon_date_white.svg";
-
 import videoLandingBackground from "./resource/video_landing_background.mp4";
 import transitionImg from "./resource/burn_texture_30fps_small_white.png"
 import { useScrollEvent } from './useScrollEvent';
@@ -107,7 +106,6 @@ function App() {
         zoomWrapper[0].scrollTo(itemIndexNow*(window.innerWidth+20),0);
         for(var i = 0; i<galleryItemMax;i++){
           galleryItem[i].style.setProperty('pointer-events','none');
-          // galleryItem[i].classList.add('gallery-item-gooey');
         }
         ReactGA.event({
           category: "Gallery",
