@@ -1,4 +1,4 @@
-import React, {useState,useEffect,useRef} from 'react';
+import React, {useEffect} from 'react';
 import Map from './Map'
 import './App.css';
 import './font.css'
@@ -124,7 +124,6 @@ function App() {
     galleryItem[13].style.setProperty('background-position-y','100%');
     galleryItem[5].style.setProperty('background-position-x','0%');
     gallerySlider[0].scrollTo(galleryItem[5].getBoundingClientRect().width * .4 ,0);
-    // galleryItemParallax[0].style.setProperty('background-image','url(/img/profile_'+3+'.jpg)');
   }
 
   const customPrevent=(e)=>{console.log("before");e.preventDefault();console.log("after")}
@@ -133,10 +132,8 @@ function App() {
     document.body.classList.remove('scroll-disable');
     for(var i = 0; i<galleryItemMax;i++){
       galleryItem[i].style.setProperty('pointer-events','all');
-      // galleryItem[i].classList.remove('gallery-item-gooey');
     }
     galleryZoom[0].classList.remove('gallery-zoom-visible');
-    // window.removeEventListener('touchmove',customPrevent(e), {passive: false});
 
     ReactGA.event({
       category: "Gallery",
@@ -229,10 +226,6 @@ return (
         <div className="main-greetings">
           <div className="greetings-floral"></div>
           <p className="greetings-title">결혼합니다</p>
-        {/* <div className="greetings-img">
-        <div className="outro-background"></div>
-        <div className='greetings-floral outro-floral'></div>
-        </div> */}
           <p className="greetings-text">
             겨울의 끝과, 여름의 시작이 만나
             <br></br>두사람의 봄을 맞이하려 합니다.<br></br>
@@ -248,7 +241,6 @@ return (
         <div className="main-gallery">
           <p className="gallery-title">갤러리</p>
           <div className="gallery-slider">
-            {/* 19 items */}
             <div className="gallery-item"></div>
             <div className="gallery-item"></div>
             <div className="gallery-item"></div>
@@ -431,10 +423,6 @@ return (
       </div>
       <div className="main-outro">
         <footer> <small>&copy; Copyright 2022, JSR All Rights Reserved.</small> </footer> 
-        {/* <div className="outro-background"></div> */}
-        {/* <div className="outro-foreground"></div> */}
-        {/* <div className='greetings-floral outro-floral'></div> */}
-        {/* <OutroImg className="outro-svg"></OutroImg> */}
       </div>
       </div>
         <div className="gallery-zoom">
@@ -465,7 +453,6 @@ return (
             <div className="zoom-item"></div>
             <div className="zoom-item"></div>
           </div>
-          
         </div>
     </div>
   );
