@@ -7,13 +7,11 @@ import reportWebVitals from './reportWebVitals';
 window.addEventListener("DOMContentLoaded", function(){
   const Agent = navigator.userAgent.toLowerCase();
   if(Agent.includes("kakao")){
-      // window.location.href = 'kakaotalk://inappbrowser/close';
       if(navigator.userAgent.match(/iPhone|iPad/i)){
-          // window.location.href='ftp://'+window.location.href.replace(/https?:\/\//i,'');
+        console.log("iphone")
       }
       else {
-          // window.location.href = 'kakaotalk://inappbrowser/close';
-          // window.location.href='intent://'+window.location.href.replace(/https?:\/\//i,'')+'#Intent;scheme=http;package=com.android.chrome;end';
+        console.log("android")
       }
   }
   if ( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)){
