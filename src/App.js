@@ -13,7 +13,7 @@ import ReactGA from "react-ga";
 
 function App() {
   document.title = "서로랑 영주랑"
-  const dday= Math.ceil((new Date("2022-06-19").getTime() - new Date().getTime())/86400000);
+  const dday= Math.ceil((new Date().getTime() - new Date("2022-06-19").getTime())/86400000);
   const tempScroll=document.getElementsByClassName("temp-scroll");
   const wrapperLanding=document.getElementsByClassName("wrapper-landing");
   const wrapperMain=document.getElementsByClassName("wrapper-main");
@@ -209,7 +209,7 @@ return (
               <IconDateWhite className="date-img"></IconDateWhite>
               <p className="date-text">6/19 1시20분</p>
             </div>
-            <p className="info-dday">D-{dday}</p>
+            <p className="info-dday">D+{dday}</p>
           </div>
           <div className="landing-arrow-wrapper">
             <span className="landing-arrow-text">천천히 올려보세요</span>
