@@ -24,10 +24,6 @@
   --transition-size: 13100%; 
   --transition-size-mask: 13000%; 
   --transition-steps: steps(120); 
-  /* --transition-url: url("./resource/burn_texture_small_more.png");
-  --transition-size: 25000%;
-  --transition-steps: steps(241);
-   */
   --transition-time:2s;
   --transition-time-mask:2s;
   --transition-duration:4.5s;
@@ -48,12 +44,6 @@
 
 *{
   user-select: none;
-  /* touch-action: manipulation; */
-}
-
-html {
-  /* overflow-x: hidden; */
-  /* touch-action: pan-y;  */
 }
 
 body{
@@ -74,9 +64,6 @@ body{
   margin: 0 auto;
   left: 0;
   right: 0;
-  /* background:url(https://www.apple.com/v/iphone-13-pro/f/images/overview/camera/zoom/zoom_photography_1__szumubtdcle2_large.jpg) no-repeat; */
-  /* background-size:auto calc(var(--vh) * 110); */
-  /* background-position-x: center; */
   overflow:hidden;
 }
 
@@ -87,8 +74,6 @@ body{
   height: 100%;
   left:0;
   top:0;
-  /* background-image: radial-gradient(at 0vw 100vh, rgb(0, 0, 0,1) , rgb(0, 0, 0,.2) 30%), */
-              /* radial-gradient(at 100vw 100vh, rgb(0, 0, 0,1) , rgb(0, 0, 0,.2) 30%); */
   background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,.8) 20%, rgba(0,0,0,0) 60%);
 }
 
@@ -117,9 +102,6 @@ body{
 
 .main-title{
   width:100%;
-  /* bottom:calc(15vh + 14vw + 7vw); */
-  /* left:calc(calc(100vw - 85vw )/2); */
-  /* overflow:hidden;  */
   display: flex;
   flex-direction:column;
   flex-wrap: nowrap;
@@ -159,7 +141,6 @@ body{
   border: 0.5px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0px 0px 10px rgba(255,255,255,.15);
   color:rgba(255, 255, 255, 0.747);
-  /* overflow:hidden;  */
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -171,10 +152,8 @@ body{
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  /* flex-basis:40%; */
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
 }
 
 .place-img{
@@ -195,7 +174,6 @@ body{
 .info-date{
   display: flex;
   flex-wrap: nowrap;
-  /* flex-basis:25%; */
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -216,17 +194,11 @@ body{
 }
 
 .info-dday{
-  /* flex-basis: 20%; */
   font-size: 17pt;
   font-weight: 100;
   letter-spacing:1pt;
   color:white;
   font-family: 'AritaBuri';
-}
-
-.gallery-scroll-arrow{
-  /* position:absolute; */
-  /* left:0%; */
 }
 
 .landing-arrow-wrapper {
@@ -334,12 +306,10 @@ body{
   0%{
     left:0%;
     backdrop-filter: blur(0px);
-  /* filter:blur(0px); */
   }
   100% {
     left:-13000%;
     backdrop-filter: blur(10px);
-  /* filter:blur(0px); */
   }
 }
 
@@ -351,7 +321,6 @@ body{
   margin: 0 auto;
   left: 0;
   right: 0;
-  /* height: 100vh; */
   left:0;
   top:0;
   display: flex;
@@ -413,8 +382,6 @@ body{
   max-width:336px;
   position:absolute;
   height: 100vh;
-  /* max-height:480px; */
-  /* overflow: hidden; */
   animation-timing-function: steps(80);
   animation-duration: var(--transition-duration);
   animation-delay: calc(var(--scroll) * calc( var(--transition-time) + 1s ) * 2 + 2s );
@@ -484,7 +451,6 @@ body{
   font-weight: 800;
   opacity: .4;
   letter-spacing: -0.5pt;
-  /* margin-left:3pt; */
 }
 
 .main-calendar{
@@ -506,12 +472,10 @@ body{
   font-family: 'AritaBuri';
   font-size:var(--title-text-size);
   letter-spacing: 4pt;
-  /* margin-bottom:50px; */
   font-weight: 800;
   color:rgba(0, 0, 0,.6);
   color:white;
   margin:0;
-  /* padding-bottom: 50px; */
 }
 
 .calendar-subtitle{
@@ -520,22 +484,18 @@ body{
   margin-bottom:50px;
   font-weight: 800;
   color:rgba(0, 0, 0,.6);
-  /* color:white; */
-  /* padding-bottom: 50px; */
 }
 
 .calendar-wrapper{
   width:80vw;
   max-width:348px;
   border: 1px;
-  /* border-radius: 8px; */
   border-style: solid;
   border-color:  rgba(0, 0, 0, 0.373);
   border-right: 1px;
   border-left: 1px;
   padding-top:10px;
   padding-bottom:10px;
-  /* box-shadow: 0px 0px 5px #1abc9c; */
 }
 
 .calendar-weekdays {
@@ -553,7 +513,6 @@ body{
 
 .calendar-days {
   padding: 10px 0;
-  /* background: #eee; */
   margin: 0;
 }
 
@@ -610,7 +569,6 @@ body{
   font-weight: 800;
   color:rgba(0, 0, 0,.6);
   color:white;
-  /* padding-bottom: 50px; */
 }
 
 .gallery-slider{
@@ -623,7 +581,6 @@ body{
   justify-content: center;
   align-content: flex-start;
   overflow-x:scroll;
-  /* z-index: 200; */
   pointer-events:all;
 }
 
@@ -639,7 +596,6 @@ body{
   border-radius: 10px;
   border: 0.5px solid rgb(224 224 224);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
-  /* flex: 20% 1; */
   background:rgba(0, 0, 0, .0);
   cursor: pointer;
   background-position: center 0%;
@@ -689,18 +645,15 @@ body{
 }
 
 .gallery-scroll{
-  /* width:100vw; */
   width:100%;
   left:0%;
   max-width:480px;
   height: calc( var(--gallery-item-width) * 3 + 6 * var(--gallery-item-gap) + 5px) ;
   max-height:calc( 698.976 + 6 * var(--gallery-item-gap) + 5px) ;
   position:absolute;
-  /* background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0.5) 100%); */
   background:
     radial-gradient(circle at -70vw, rgba(0, 0, 0,.5 ) 70vw,rgba(0, 0, 0, .5) 40%, rgba(0, 0, 0, 0) 50%),
     radial-gradient(circle at 170vw, rgba(0, 0, 0,.5 ) 70vw,rgba(0, 0, 0, .5) 40%, rgba(0, 0, 0, 0) 50%);
-    /* radial-gradient(at 180% 50%, rgb(0, 0, 0) 250px,rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 50%); */
   pointer-events: none;
 }
 
@@ -792,21 +745,7 @@ body{
 
 .scroll-disable{
   overflow: hidden;
-  /* position: fixed; */
 }
-
-/* .zoom-item {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  max-width: 480px;
-  height:100%;
-  background-size:contain;
-  background-position:center;
-  background-repeat: no-repeat;
-} */
 
 .zoom-menu{
   width:100vw;
@@ -846,7 +785,6 @@ body{
   height:5vw;
   max-width: 25px;
   max-height: 25px;
-  /* right:2.5vw; */
   background:url("./resource/icon_pre_white.svg") center center no-repeat;
 }
 
@@ -860,7 +798,6 @@ body{
   height:5vw;
   max-width: 25px;
   max-height: 25px;
-  /* right:2.5vw; */
   background:url("./resource/icon_next_white.svg") center center no-repeat;
   margin-left: 40px;
   margin-right: 40px;
@@ -882,7 +819,6 @@ body{
 .main-message{
   width:100vw;
   max-width: 480px;
-  /* height: 100vh; */
   left:0;
   margin: 0 auto;
   display: flex;
@@ -911,10 +847,7 @@ body{
   max-width: 480px;
   margin-top:50px;
   margin-bottom:50px;
-  /* height:100vh; */
-  /* height: 100vh; */
   left:0;
-  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -933,7 +866,6 @@ body{
   justify-content: center;
   font-family: 'AritaBuri';
   padding:20px;
-  /* border-radius: 8px; */
   border: 0.5px solid rgb(100, 100, 100);
   border-left:0px;
   border-right:0px;
@@ -953,7 +885,6 @@ body{
 .load-hall{
   font-size:15pt;
   margin:0;
-  /* margin-top:18px */
 }
 
 .load-address{
@@ -965,10 +896,6 @@ body{
 }
 
 .load-map{
-  /* width:100vw; */
-  /* height:calc( 100vw / 1.618); */
-  /* pointer-events: all; */
-  /* user-select:all;  */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -981,7 +908,6 @@ body{
 .load-map-link{
   width:100vw;
   height:13vw;
-  /* max-height: 162px; */
   background:white;
   color:black;
   text-align: center;
@@ -1095,21 +1021,12 @@ body{
   }
 }
 
-
-/* .thanks-title-active:before {
-	visibility: visible;
-	content: "NEW_CONTENT"; */
-/* } */
-
-
 .thanks-btn{
   width:50vw;
   max-width:240px;
   height: 12vw;
   max-height: 57px;
   margin-top:15px;
-  /* border: 0.5px solid rgb(149, 171, 168); */
-  /* color:rgba(43, 43, 43, 0.747); */
   font-family: "AritaBuri";
   box-sizing: border-box;
   box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 0.25),
@@ -1169,7 +1086,6 @@ body{
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
-  /* margin:16px; */
 }
 
 .thanks-btn-row-wrapper-active{
@@ -1252,7 +1168,6 @@ body{
   max-width: 480px;
   margin-top:50px;
   margin-bottom:50px;
-  /* height: 50vw; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1275,7 +1190,6 @@ body{
   position:absolute;
   transform: translateY(-5vw);
   opacity: 1;
-  /* animation: outro-foreground-ani 2s ease infinite */
 }
 
 #outro-img-fore-img{
@@ -1287,10 +1201,8 @@ body{
 
 @keyframes outro-foreground-ani {
   0%{
-    /* transform: scale(0.24); */
   }
   100%{
-    /* transform: scale(.5); */
     transform:translate(-5px,-50px);
   }
   
@@ -1301,5 +1213,4 @@ body{
   z-index: 1000;
   left:10%;
   transform: rotate(-10deg);
-  /* top:-45vw; */
 }
